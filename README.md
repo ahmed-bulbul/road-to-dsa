@@ -21,6 +21,21 @@
 
 ## LinkedList
 ### Create Linked List
+
+**লিঙ্ক লিস্ট কিভাবে তৈরি করতে হয় ** 
+প্রথমে আমাদের এক্টি Node ক্লাস তৈরি করতে হবে 
+```java
+ public static class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data = data;
+        }
+    }
+```
+
+
+
 ## Week 1
 ### Decimal Formatter
 
