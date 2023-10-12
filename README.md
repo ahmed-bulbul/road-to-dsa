@@ -1,6 +1,6 @@
 # road-to-dsa
 
-<h1> Decimal Formatter Java </h1>
+<h3> Decimal Formatter Java </h3>
 ```
 import java.text.DecimalFormat;
 DecimalFormat df = new DecimalFormat("#.000000");
