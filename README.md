@@ -68,3 +68,24 @@ public class DecimalFormatterExample {
         System.out.println(String.format("%d %d", sum-max, sum-min));
     }
 ```
+### Time Conversion
+**Problem:** Given time in AM/AM means 12 hour format need to conver it to 24 - hour format
+**Input:**
+07:05:45PM </br>
+
+**Output:**
+19:05:45
+
+```java
+  public static String timeConversion(String s) {
+       int hour = Integer.valueOf(s.substring(0,2));
+
+        if(s.endsWith("AM")){
+            hour = (hour==12)?0:hour;
+        }else{
+            hour = (hour==12)?hour:hour+12;
+        }
+
+        return String.format("%02d%s",hour,s.substring(2,s.length()-2));
+    }
+```
