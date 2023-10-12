@@ -36,3 +36,12 @@ public class DecimalFormatterExample {
         System.out.println(df.format(zeros / (double) arr.size()));
     }
 }
+
+### Mini Max Sum
+**Problem:** Given five number find max and min number using four out of five numbers
+
+**Input:**
+1 2 3 4 5</br>
+
+**Output:**
+10 14
