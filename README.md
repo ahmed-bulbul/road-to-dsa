@@ -1,4 +1,5 @@
 # road-to-dsa
+## Week 1##
 ### Decimal Formatter
 
 **Problem:** Count the average of positive, negative, and zero numbers.
