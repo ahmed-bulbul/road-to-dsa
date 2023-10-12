@@ -1,4 +1,4 @@
-# road-to-dsa
+# DSA Foundation
 
 ## [LinkedList](#linkedlist)
  - [Create Linked List](#create-linked-list)
