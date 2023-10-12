@@ -49,7 +49,7 @@ public class DecimalFormatterExample {
 ```java
  public static void miniMaxSum(List<Integer> arr) {
 
- long max=Integer.MIN_VALUE;
+        long max=Integer.MIN_VALUE;
         long min = Integer.MAX_VALUE;
         long sum=0;
         
