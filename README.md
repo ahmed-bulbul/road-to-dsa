@@ -1,4 +1,8 @@
 # road-to-dsa
+
+## [LinkedList](#linkedlist)
+ - [Create Linked List](#create-linked-list)
+
 ## [Week 1](#week-1)
 
 - [Decimal Formatter](#decimal-formatter)
@@ -10,6 +14,13 @@
 - [Problem 1](#problem-1)
 - [Problem 2](#problem-2)
 - [Problem 3](#problem-3)
+
+
+
+
+
+## LinkedList
+### Create Linked List
 ## Week 1
 ### Decimal Formatter
 
