@@ -64,6 +64,26 @@ public static void display(Node head){
     }
 ```
 ### Find nth Node From the End
+Solution 1: 
+```java
+public static Node nthNode(Node head,int n){
+        int size = 0;
+        Node temp = head;
+
+        while (temp!=null){
+            size++;
+            temp = temp.next;
+        }
+        int m = size - n +1; //mth node from start
+        temp = head;
+        for(int i=1;i<=m-1;i++){
+            temp = temp.next;
+        }
+        return temp;
+
+    }
+```
+Solution 2: 
 ```java
 public static Node nthNode2(Node head,int n){
         Node slow = head;
