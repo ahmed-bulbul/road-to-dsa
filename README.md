@@ -1,16 +1,40 @@
 # road-to-dsa
 
-### Decimal Formatter Java
+### Decimal Formatter 
+Problem: Count average of positive,negative and zero
+Input:
+6
+-4 3 -9 0 4 1
+Output:
+0.500000
+0.333333
+0.166667
 
 ```java
 import java.text.DecimalFormat;
 
 public class DecimalFormatterExample {
-    public static void main(String[] args) {
+    public static void plusMinus(List<Integer> arr) {
+        // Write your code here
+
+        int positives = 0, negatives =0, zeros=0;
+
+        for(int num : arr){
+            if(num==0){
+                zeros++;
+            }else if(num<0){
+                negatives++;
+            }else{
+                positives++;
+            }
+        }
+
+
         DecimalFormat df = new DecimalFormat("#.000000");
-        int x = 5;
-        int size = 10;
-        System.out.println(df.format(x / (double) size));
+        System.out.println(df.format(positives / (double) arr.size()));
+        System.out.println(df.format(negatives / (double) arr.size()));
+        System.out.println(df.format(zeros / (double) arr.size()));
+
     }
 }
 output : 
