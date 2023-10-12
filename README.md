@@ -36,7 +36,7 @@ public class DecimalFormatterExample {
         System.out.println(df.format(zeros / (double) arr.size()));
     }
 }
-
+```
 ### Mini Max Sum
 **Problem:** Given five number find max and min number using four out of five numbers
 
@@ -45,3 +45,29 @@ public class DecimalFormatterExample {
 
 **Output:**
 10 14
+
+```java
+ public static void miniMaxSum(List<Integer> arr) {
+    // Write your code here
+        int max=0;
+        int totalSum = 0;
+        for(int num: arr){
+            totalSum = totalSum+ num;
+        }
+        int min = totalSum;
+        
+        for(int num: arr){
+            int currSum = totalSum - num;
+            if(currSum > max) max = currSum;
+        }
+        
+         for(int num: arr){
+            int currSum = totalSum - num;
+            if(currSum < min) min = currSum;
+        }
+        
+        System.out.print(min+" "+max);
+        
+
+    }
+```
