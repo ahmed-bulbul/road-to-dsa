@@ -13,3 +13,5 @@ public class DecimalFormatterExample {
         System.out.println(df.format(x / (double) size));
     }
 }
+output : 
+.500000
