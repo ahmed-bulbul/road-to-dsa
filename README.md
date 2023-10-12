@@ -2,6 +2,7 @@
 
 ## [LinkedList](#linkedlist)
  - [Create Linked List](#create-linked-list)
+ - [Find nth Node From the End](#find-nth-node-from-the-end)
 
 ## [Week 1](#week-1)
 
@@ -60,6 +61,23 @@ public static void display(Node head){
             temp=temp.next;
         }
         System.out.println();
+    }
+```
+### Find nth Node From the End
+```java
+public static Node nthNode2(Node head,int n){
+        Node slow = head;
+        Node fast = head;
+
+        for(int i=0;i<n;i++){
+            fast = fast.next;
+        }
+
+        while(fast!=null){
+            slow = slow.next;
+            fast=fast.next;
+        }
+        return slow;
     }
 ```
 
