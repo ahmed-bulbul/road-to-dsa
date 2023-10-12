@@ -5,7 +5,7 @@
  - [Find nth Node From the End](#find-nth-node-from-the-end)
 
    
-# Hacker Rank 3Month interview preparation
+# Hacker Rank 3Month interview preparation 
 ## [Week 1](#week-1)
 
 - [Decimal Formatter](#decimal-formatter)
@@ -17,6 +17,9 @@
 - [Problem 1](#problem-1)
 - [Problem 2](#problem-2)
 - [Problem 3](#problem-3)
+
+# Leetcode Problems & Solutions : [Top Interview Question](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
+## [Array](#leetcode-array)
 
 
 
