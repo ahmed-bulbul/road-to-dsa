@@ -4,6 +4,8 @@
  - [Create Linked List](#create-linked-list)
  - [Find nth Node From the End](#find-nth-node-from-the-end)
 
+   
+# Hacker Rank 3Month interview preparation
 ## [Week 1](#week-1)
 
 - [Decimal Formatter](#decimal-formatter)
@@ -100,7 +102,7 @@ public static Node nthNode2(Node head,int n){
         return slow;
     }
 ```
-# Hacker Rank 3Month interview preparation
+
 ## Week 1
 ### Decimal Formatter
 
