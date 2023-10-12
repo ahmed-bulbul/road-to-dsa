@@ -50,7 +50,18 @@ public static void main(String[] args) {
         e.next=f;
 }
 ```
+এখন দেখব অ্যাডকৃত ডাটা কিভাবে প্রদর্শন করতে হয় 
 
+```java
+public static void display(Node head){
+        Node temp = head;
+        while (temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+```
 
 ## Week 1
 ### Decimal Formatter
