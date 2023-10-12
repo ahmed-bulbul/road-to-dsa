@@ -108,8 +108,8 @@ public static Node nthNode2(Node head,int n){
     }
 ```
 
-##Leetcode Array
-###Remove Duplicates From Sorted Array
+## Leetcode Array
+### Remove Duplicates From Sorted Array
 ```
 Input: nums = [1,1,2]
 Output: 2, nums = [1,2,_]
