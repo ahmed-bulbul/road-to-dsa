@@ -1,6 +1,7 @@
 # road-to-dsa
 
-<h3> Decimal Formatter Java </h3>
+### Decimal Formatter Java
+
 ```java
 import java.text.DecimalFormat;
 
