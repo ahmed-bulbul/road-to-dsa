@@ -1,4 +1,15 @@
 # road-to-dsa
+## [Week 1](#week-1)
+
+- [Decimal Formatter](#decimal-formatter)
+- [Mini Max Sum](#mini-max-sum)
+- [Time Conversion](#time-conversion)
+
+## [Week 2](#week-2)
+
+- [Problem 1](#problem-1)
+- [Problem 2](#problem-2)
+- [Problem 3](#problem-3)
 ## Week 1
 ### Decimal Formatter
 
