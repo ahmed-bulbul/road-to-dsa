@@ -48,26 +48,22 @@ public class DecimalFormatterExample {
 
 ```java
  public static void miniMaxSum(List<Integer> arr) {
-    // Write your code here
-        int max=0;
-        int totalSum = 0;
-        for(int num: arr){
-            totalSum = totalSum+ num;
-        }
-        int min = totalSum;
-        
-        for(int num: arr){
-            int currSum = totalSum - num;
-            if(currSum > max) max = currSum;
-        }
-        
-         for(int num: arr){
-            int currSum = totalSum - num;
-            if(currSum < min) min = currSum;
-        }
-        
-        System.out.print(min+" "+max);
-        
 
+ long max=Integer.MIN_VALUE;
+        long min = Integer.MAX_VALUE;
+        long sum=0;
+        
+        
+        for(int num: arr){
+            sum = sum+num;
+            if(num < min){
+                min = num;
+            }
+            if(num > max){
+                max = num;
+            }
+            
+        }
+        System.out.println(String.format("%d %d", sum-max, sum-min));
     }
 ```
