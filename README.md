@@ -3,6 +3,7 @@
 ## [LinkedList](#linkedlist)
  - [Create Linked List](#create-linked-list)
  - [Find nth Node From the End](#find-nth-node-from-the-end)
+ - [Remove nth Node From the End](#remove-nth-node-from-the-end)
 
    
 # Hacker Rank 3Month interview preparation 
@@ -105,6 +106,24 @@ public static Node nthNode2(Node head,int n){
             fast=fast.next;
         }
         return slow;
+    }
+```
+### Remove nth Node From the End
+```java
+public static void deleteNthFromEnd(Node head, int n){
+        Node slow = head;
+        Node fast = head;
+
+        for(int i=0;i<n;i++){
+            fast = fast.next;
+        }
+
+        while (fast.next!=null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        slow.next = slow.next.next;
+
     }
 ```
 
