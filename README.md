@@ -12,6 +12,7 @@
 - [Decimal Formatter](#decimal-formatter)
 - [Mini Max Sum](#mini-max-sum)
 - [Time Conversion](#time-conversion)
+- [Breaking The Records](#breaking-the-records)
 
 ## [Week 2](#week-2)
 
@@ -257,5 +258,35 @@ public class DecimalFormatterExample {
         }
 
         return String.format("%02d%s",hour,s.substring(2,s.length()-2));
+    }
+```
+
+### Breaking The Records
+**Problem** Given an array of scores of a player, need to find how many times he breaks his highest and lowest score.
+
+**Input:**
+10 5 20 20 4 5 2 25 1</br>
+
+**Output:**
+2 4
+
+```java
+public static List<Integer> breakingRecords(List<Integer> scores) {
+        int min = scores.get(0);
+        int max = scores.get(0);
+        int minCount = 0;
+        int maxCount = 0;
+
+        for(int i=1;i<scores.size();i++){
+            if(scores.get(i) < min){
+                min = scores.get(i);
+                minCount++;
+            }
+            if(scores.get(i) > max){
+                max = scores.get(i);
+                maxCount++;
+            }
+        }
+        return Arrays.asList(maxCount,minCount);
     }
 ```
