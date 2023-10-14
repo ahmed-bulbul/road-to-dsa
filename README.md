@@ -6,7 +6,7 @@
  - [Remove nth Node From the End](#remove-nth-node-from-the-end)
 
    
-# Hacker Rank 3Month interview preparation 
+# Hacker Rank 3 Month interview preparation 
 ## [Week 1](#week-1)
 
 - [Decimal Formatter](#decimal-formatter)
