@@ -13,6 +13,7 @@
 - [Mini Max Sum](#mini-max-sum)
 - [Time Conversion](#time-conversion)
 - [Breaking The Records](#breaking-the-records)
+- [Divisible Sum pairs](#divisible-sum-pairs)
 
 ## [Week 2](#week-2)
 
@@ -290,3 +291,36 @@ public static List<Integer> breakingRecords(List<Integer> scores) {
         return Arrays.asList(maxCount,minCount);
     }
 ```
+
+### Divisible Sum pairs 
+**Problem** Given an array of integers and a positive integer k, determine the number of (i,j) pairs where i < j and ar[i] + ar[j] is divisible by k.
+
+
+**Input:**
+6 3</br>
+1 3 2 6 1 2</br>
+
+**Output:**
+5
+
+```java
+ public static int divisibleSumPairs(int n, int k, List<Integer> ar) {
+    // Write your code here
+    
+        int count=0;
+        for(int i=0;i<ar.size();i++){
+            for(int j=i+1;j<ar.size();j++){
+                
+                int tempSum = ar.get(i) + ar.get(j);
+                
+                if(tempSum%k==0 ){
+                    count++;
+                }
+            }
+        }
+        
+        return count;
+
+    }
+```
+
