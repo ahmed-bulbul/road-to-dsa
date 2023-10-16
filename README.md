@@ -330,19 +330,19 @@ public static List<Integer> breakingRecords(List<Integer> scores) {
 **Problem** Camel case 4 problem
 
 **Input**
-S;M;plasticCup()
-C;V;mobile phone
-C;C;coffee machine
-S;C;LargeSoftwareBook
-C;M;white sheet of paper
-S;V;pictureFrame
+S;M;plasticCup() </br>
+C;V;mobile phone  </br>
+C;C;coffee machine  </br>
+S;C;LargeSoftwareBook  </br>
+C;M;white sheet of paper  </br>
+S;V;pictureFrame </br> 
 
 **Output**
-plastic cup
-mobilePhone
-CoffeeMachine
-large software book
-whiteSheetOfPaper()
+plastic cup  </br>
+mobilePhone  </br>
+CoffeeMachine  </br>
+large software book  </br>
+whiteSheetOfPaper()  </br>
 picture frame
 
 ```java
