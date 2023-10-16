@@ -14,6 +14,7 @@
 - [Time Conversion](#time-conversion)
 - [Breaking The Records](#breaking-the-records)
 - [Divisible Sum pairs](#divisible-sum-pairs)
+- [Camel Case 4](#camel-case-4)
 
 ## [Week 2](#week-2)
 
@@ -324,3 +325,143 @@ public static List<Integer> breakingRecords(List<Integer> scores) {
     }
 ```
 
+### Camel Case 4
+**Problem** Camel case 4 problem
+
+**Input**
+S;M;plasticCup()
+
+C;V;mobile phone
+
+C;C;coffee machine
+
+S;C;LargeSoftwareBook
+
+C;M;white sheet of paper
+
+S;V;pictureFrame
+
+
+
+**Output**
+
+plastic cup
+
+mobilePhone
+
+CoffeeMachine
+
+large software book
+
+whiteSheetOfPaper()
+
+picture frame
+
+```java
+
+import java.util.Scanner;
+
+public class CamelCase {
+
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            String[] parts = line.split(";");
+            if (parts.length != 3) {
+                continue; // Skip invalid input lines
+            }
+
+            String operation = parts[0];
+            String type = parts[1];
+            String input = parts[2];
+
+            if (operation.equals("S")) {
+                if (type.equals("M")) {
+                    String[] words = splitCamelCaseMethod(input);
+                    System.out.println(String.join(" ", words));
+                } else if (type.equals("C")) {
+                    String converted = splitCamelCaseClass(input);
+                    System.out.println(converted);
+                } else if (type.equals("V")) {
+                    String[] words = splitCamelCaseVariable(input);
+                    System.out.println(String.join(" ", words));
+                }
+            } else if (operation.equals("C")) {
+                if (type.equals("V")) {
+                    String converted = combineCamelCaseVariable(input);
+                    System.out.println(converted);
+                } else if (type.equals("C")) {
+                    String converted = combineCamelCaseClass(input);
+                    System.out.println(converted);
+                } else if (type.equals("M")) {
+                    String converted = combineCamelCaseMethod(input);
+                    System.out.println(converted);
+                }
+            }
+
+        }
+    }
+
+    public static String[] splitCamelCaseMethod(String input) {
+        String methodName = input.substring(0, input.indexOf("("));
+        String[] words = splitCamelCaseVariable(methodName);
+        return words;
+    }
+
+    public static String splitCamelCaseClass(String input) {
+        String[] words = input.split("(?<=.)(?=\\p{Lu})");
+        for (int i = 0; i < words.length; i++) {
+            words[i] = words[i].substring(0, 1).toLowerCase() + words[i].substring(1);
+        }
+        return String.join(" ", words);
+    }
+
+    public static String[] splitCamelCaseVariable(String input) {
+        String[] words = input.split("(?<=.)(?=\\p{Lu})");
+        for (int i = 0; i < words.length; i++) {
+            words[i] = words[i].substring(0, 1).toLowerCase() + words[i].substring(1);
+        }
+        return words;
+    }
+
+    public static String combineCamelCaseVariable(String input) {
+        String[] words = input.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < words.length; i++) {
+            if (i == 0) {
+                result.append(words[i]);
+            } else {
+                result.append(words[i].substring(0, 1).toUpperCase()).append(words[i].substring(1));
+            }
+        }
+        return result.toString();
+    }
+
+    public static String combineCamelCaseClass(String input) {
+        String[] words = input.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (String word : words) {
+            result.append(word.substring(0, 1).toUpperCase()).append(word.substring(1));
+        }
+        return result.toString();
+    }
+
+    public static String combineCamelCaseMethod(String input) {
+        String[] words = input.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < words.length; i++) {
+            if (i == 0) {
+                result.append(words[i]);
+            } else {
+                result.append(words[i].substring(0, 1).toUpperCase()).append(words[i].substring(1));
+            }
+        }
+        return result.toString() + "()";
+    }
+}
+```
