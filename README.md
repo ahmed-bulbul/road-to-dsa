@@ -330,7 +330,6 @@ public static List<Integer> breakingRecords(List<Integer> scores) {
 **Problem** Camel case 4 problem
 
 **Input**
-
 S;M;plasticCup()
 C;V;mobile phone
 C;C;coffee machine
