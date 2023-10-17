@@ -460,11 +460,14 @@ public class CamelCase {
 
 ### Mock Test
 **Problems** Find the median. 
+
 **Input**
+
 7 </br>
 0 1 2 4 6 5 3
 
 **Output**
+
 3
 ```java
 
