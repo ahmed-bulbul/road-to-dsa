@@ -17,6 +17,8 @@
 - [Divisible Sum pairs](#divisible-sum-pairs)
 - [Camel Case 4](#camel-case-4)
 - [Mock Test](#mock-test)
+- [এই ৭ দিনে কি শিখলাম](#এই-৭-দিনে-কি-শিখলাম)
+- 
   
 
 ## [Week 2](#week-2)
@@ -474,4 +476,10 @@ public class CamelCase {
 
     }
 ```
+### এই ৭ দিনে কি শিখলাম
+**ডেসিমাল ফর্মেটার ঃ**
+ডেসিমাল ফরমেট এর জন্য আমরা DecimalFormat ক্লাস ব্যবহার করি এবং এর মদ্ধে আমরা ফরমেট পাস করে দিতে পারি । 
+
+
+
 
