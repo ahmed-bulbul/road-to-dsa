@@ -18,7 +18,7 @@
 - [Camel Case 4](#camel-case-4)
 - [Mock Test](#mock-test)
 - [এই ৭ দিনে কি শিখলাম](#এই-৭-দিনে-কি-শিখলাম)
-- 
+  
   
 
 ## [Week 2](#week-2)
@@ -26,6 +26,15 @@
 - [Problem 1](#problem-1)
 - [Problem 2](#problem-2)
 - [Problem 3](#problem-3)
+
+- ## [Week 3](#week-3)
+
+- [Problem 1](#problem-1)
+- [Problem 2](#problem-2)
+- [Problem 3](#problem-3)
+
+
+
 
 # Leetcode Problems & Solutions : [Top Interview Question](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)
 ## [Array](#leetcode-array)
