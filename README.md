@@ -16,7 +16,7 @@
 - [Breaking The Records](#breaking-the-records)
 - [Divisible Sum pairs](#divisible-sum-pairs)
 - [Camel Case 4](#camel-case-4)
-- [Mock Test](#mock-test)
+- [Mock Test 1](#mock-test-1)
 - [এই ৭ দিনে কি শিখলাম](#এই-৭-দিনে-কি-শিখলাম)
   
   
@@ -467,7 +467,7 @@ public class CamelCase {
 }
 ```
 
-### Mock Test
+### Mock Test 1
 **Problems** Find the median. 
 
 **Input**
