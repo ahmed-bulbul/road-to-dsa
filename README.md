@@ -16,6 +16,8 @@
 - [Breaking The Records](#breaking-the-records)
 - [Divisible Sum pairs](#divisible-sum-pairs)
 - [Camel Case 4](#camel-case-4)
+- [Mock Test](#mock-test)
+  
 
 ## [Week 2](#week-2)
 
@@ -453,3 +455,23 @@ public class CamelCase {
     }
 }
 ```
+
+### Mock Test
+**Problems** Find the median. 
+**Input**
+7 </br>
+0 1 2 4 6 5 3
+
+**Output**
+3
+```java
+
+    public static int findMedian(List<Integer> arr) {
+    // Write your code here
+    arr.sort(null);
+    int middle = arr.size()/2;
+    return arr.get(middle);
+
+    }
+```
+
