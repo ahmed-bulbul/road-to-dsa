@@ -23,7 +23,7 @@
 
 ## [Week 2](#week-2)
 
-- [Problem 1](#problem-1)
+- [Lonely Integer](#lonely-integer)
 - [Problem 2](#problem-2)
 - [Problem 3](#problem-3)
 
@@ -497,4 +497,40 @@ DecimalFormat df = new DecimalFormat("#.000000");
 ```
 টাইম কিভাবে কনভার্শন করতে হয় তা শিখেছি । 
 
+## Week 2
+
+### Lonely Integer
+**Problem** Given an array of integers, where all elements but one occur twice, find the unique element.
+
+Example
+a=[1,2,3,4,3,2,1]
+The unique element is 4
+
+```java
+public static int lonelyinteger(List<Integer> a) {
+    // Write your code here
+    
+        Map<Integer,Integer> map = new HashMap<>();
+        
+        for(int i : a){
+            if(!map.containsKey(i)){
+                map.put(i, 1);
+            }else{
+                map.put(i, map.get(i)+1);
+            }
+        }
+        
+      
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
+            if(entry.getValue()==1){
+                return entry.getKey();
+            }
+        }
+        
+        return 0;
+        
+        
+
+    }
+```
 
