@@ -24,7 +24,7 @@
 ## [Week 2](#week-2)
 
 - [Lonely Integer](#lonely-integer)
-- [Problem 2](#problem-2)
+- [c](#university-grade)
 - [Problem 3](#problem-3)
 
 - ## [Week 3](#week-3)
@@ -533,4 +533,33 @@ public static int lonelyinteger(List<Integer> a) {
 
     }
 ```
+### University Grade
+
+**Problems** 
+HackerLand University has the following grading policy:
+
+```java
+ public static List<Integer> gradingStudents(List<Integer> grades) {
+    // Write your code here
+        List<Integer> arr = new ArrayList<>();
+        for(int x: grades){
+            if(x<38){
+                arr.add(x);
+            }else{
+                int rem = x%5;
+                int quote = x/5;
+                if(rem >=3){
+                    arr.add((quote+1)*5);
+                }else{
+                    arr.add(x);
+                }
+            }
+        }
+        
+        return arr;
+
+    }
+```
+
+
 
