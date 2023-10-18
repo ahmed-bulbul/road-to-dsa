@@ -24,7 +24,7 @@
 ## [Week 2](#week-2)
 
 - [Lonely Integer](#lonely-integer)
-- [c](#university-grade)
+- [University Grade](#university-grade)
 - [Problem 3](#problem-3)
 
 - ## [Week 3](#week-3)
