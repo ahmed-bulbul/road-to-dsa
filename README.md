@@ -564,7 +564,7 @@ HackerLand University has the following grading policy:
 ### Diagonal Difference 
 
 
-**Problem** Diagonal Difference 
+**Problem** ::  Diagonal Difference 
 
 **Input**
 
