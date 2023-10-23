@@ -25,7 +25,7 @@
 
 - [Lonely Integer](#lonely-integer)
 - [University Grade](#university-grade)
-- [Diagonal Difference](#diagonal_difference) 
+- [Diagonal Difference](#diagonal-difference) 
 
 - ## [Week 3](#week-3)
 
@@ -564,7 +564,7 @@ HackerLand University has the following grading policy:
 ### Diagonal Difference
 
 **Problems** 
-HackerLand University has the following grading policy:
+Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
 
 **Input**
 
