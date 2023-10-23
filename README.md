@@ -25,7 +25,7 @@
 
 - [Lonely Integer](#lonely-integer)
 - [University Grade](#university-grade)
-- [Diagonal Difference ](#diagonal_difference)
+- [Diagonal Difference](#diagonal_difference)
 
 - ## [Week 3](#week-3)
 
