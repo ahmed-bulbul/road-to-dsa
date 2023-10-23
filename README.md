@@ -561,10 +561,10 @@ HackerLand University has the following grading policy:
     }
 ```
 
-### Diagonal Difference 
+### Diagonal Difference
 
-
-**Problem** ::  Diagonal Difference 
+**Problems** 
+HackerLand University has the following grading policy:
 
 **Input**
 
